@@ -53,7 +53,7 @@
   <h1>Mahjong: Pocztówki ze świata</h1>
   <p class="sub">Mahjong: World Postcards</p>
   <p class="sub">Polityka prywatności &nbsp;·&nbsp; Privacy policy</p>
-  <p class="sub">Seven Stripes &nbsp;·&nbsp; obowiązuje od 9 października 2026 (wersja 2) / effective 9 October 2026 (version 2)</p>
+  <p class="sub">Seven Stripes &nbsp;·&nbsp; obowiązuje od 13 października 2026 (wersja 3) / effective 13 October 2026 (version 3)</p>
 </header>
 
 <main>
@@ -147,6 +147,9 @@ Analytics dla Firebase. Robimy to my, Seven Stripes; Google przetwarza te dane w
   <tr><td>Uruchomienia i czas gry</td><td>pierwsze uruchomienie, kolejne sesje, aktualizacje
   gry i Androida, wyczyszczenie danych gry oraz odinstalowanie gry (o odinstalowaniu Google
   dowiaduje się od usług Google Play w telefonie)</td></tr>
+  <tr><td>Aktualizacja w grze</td><td>że Google Play zaproponował nowszą wersję gry i co się z nią
+  stało (na przykład przyjęta, odłożona albo nieudana) oraz numer zainstalowanej wersji gry i wersji
+  dostępnej w Sklepie Play</td></tr>
   <tr><td>Przebieg rozgrywki</td><td>rozpoczęcie i koniec planszy (numer planszy, jej układ, tryb,
   ułożona albo wyjście, czas, liczba pomocy), koniec planszy dnia (z serią dni), miejsce dodane do
   albumu</td></tr>
@@ -229,12 +232,15 @@ Ty: gra czyta tylko kopię Twojego własnego postępu i wysyła swój wynik. Nie
 <a href="https://myaccount.google.com">myaccount.google.com</a>.</p>
 
 <h2>Sprawdzanie aktualizacji</h2>
-<p>Gdy gra się uruchamia, pyta Sklep Google Play, czy jest jej nowsza wersja. Robi to biblioteka
+<p>Gdy gra się uruchamia albo wraca na ekran (najwyżej raz na godzinę), pyta Sklep Google Play,
+czy jest jej nowsza wersja. Robi to biblioteka
 Google Play do aktualizacji w aplikacji: przesyła do Google informacje o urządzeniu, wersję gry i
 listę jej zainstalowanych części — wyłącznie po to, żeby sprawdzić, czy jest aktualizacja i ile
 waży. Według Google te dane są szyfrowane, nie są przekazywane nikomu dalej i są usuwane po stałym
-okresie przechowywania. Gdy aktualizacja jest dostępna, Google Play pokazuje swoje okno; jeśli ją
-przyjmiesz, pobiera się w tle, a gra prosi o ponowne uruchomienie. Bez internetu, a także w grze
+okresie przechowywania. Gdy jest nowsza wersja, Google Play pokazuje w menu gry — nigdy w trakcie
+planszy — swoje okno na cały ekran; jeśli przyjmiesz aktualizację, Google Play ją pobiera, instaluje
+i sam uruchamia grę od nowa. Jeśli zamkniesz okno bez aktualizacji, gra nie zapyta ponownie aż do
+następnego uruchomienia. Bez internetu, a także w grze
 zainstalowanej spoza Sklepu Play, nic się nie sprawdza.</p>
 
 <h2>Ocena gry</h2>
@@ -289,8 +295,9 @@ Możesz też złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych
 <h2>Zmiany</h2>
 <p>Przy każdej zmianie tej polityki zmienia się data u góry strony, a nowa wersja jest publikowana
 <strong>przed</strong> wydaniem wersji gry, której zmiana dotyczy. Poprzednie wersje pozostają
-dostępne: <a href="2026-10-07.html">z 7 października 2026, wersja 1</a> (bez zdarzeń systemowych
-w statystykach i bez sprawdzania kraju telefonu).</p>
+dostępne: <a href="2026-10-09.html">z 9 października 2026, wersja 2</a> (sprzed aktualizacji
+w jednym oknie Google) i <a href="2026-10-07.html">z 7 października 2026, wersja 1</a> (bez zdarzeń
+systemowych w statystykach i bez sprawdzania kraju telefonu).</p>
 
 <h2>Kontakt</h2>
 <p>Pytania o prywatność: <a href="mailto:sevenstripesgames@gmail.com">sevenstripesgames@gmail.com</a></p>
@@ -386,6 +393,9 @@ Analytics for Firebase. We, Seven Stripes, do this; Google processes the data on
   <tr><td>Launches and play time</td><td>first launch, later sessions, game and Android updates,
   clearing the game's data and uninstalling the game (Google learns of the uninstall from Google
   Play services on the phone)</td></tr>
+  <tr><td>In-app update</td><td>that Google Play offered a newer version of the game and what became
+  of it (for example accepted, put off or failed), with the build number of the installed game and of
+  the version in the Play Store</td></tr>
   <tr><td>Gameplay</td><td>start and end of a board (board number, its layout, mode, finished or
   left, time, helps used), end of the daily board (with the streak), a place added to the
   album</td></tr>
@@ -465,12 +475,15 @@ and progress copies in the Google Play Games app (profile → settings → delet
 data) or at <a href="https://myaccount.google.com">myaccount.google.com</a>.</p>
 
 <h3>Update check</h3>
-<p>When the game starts, it asks the Google Play Store whether a newer version exists. Google Play's
+<p>When the game starts or comes back to the screen (at most once an hour), it asks the Google Play
+Store whether a newer version exists. Google Play's
 in-app update library does this: it sends Google information about the device, the game's version
 and the list of its installed parts — only to check whether there is an update and how large it is.
 According to Google this data is encrypted, not shared with anyone and deleted after a fixed
-retention period. When an update is available, Google Play shows its window; if you accept, it
-downloads in the background and the game asks to be restarted. Offline, or in a copy of the game not
+retention period. When a newer version exists, Google Play shows its full-screen window in the
+game's menu, never during a board; if you accept the update, Google Play downloads and installs it
+and starts the game again by itself. If you close the window without updating, the game does not
+ask again until it is next started. Offline, or in a copy of the game not
 installed from the Play Store, nothing is checked.</p>
 
 <h3>Rating the game</h3>
@@ -525,8 +538,9 @@ Office (<a href="https://uodo.gov.pl">uodo.gov.pl</a>).</p>
 <h3>Changes</h3>
 <p>Whenever this policy changes, the date at the top changes, and the new version is published
 <strong>before</strong> the release of the game version the change concerns. Earlier versions stay
-available: <a href="2026-10-07.html">7 October 2026, version 1</a> (without system events in the
-statistics and without checking the phone's country).</p>
+available: <a href="2026-10-09.html">9 October 2026, version 2</a> (before the in-app update in one
+Google window) and <a href="2026-10-07.html">7 October 2026, version 1</a> (without system events in
+the statistics and without checking the phone's country).</p>
 
 <h3>Contact</h3>
 <p>Privacy questions: <a href="mailto:sevenstripesgames@gmail.com">sevenstripesgames@gmail.com</a></p>
